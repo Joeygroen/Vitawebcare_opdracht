@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Foto's</title>
         <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="index.js"></script>
     </head>
     <body>
         <header> 
@@ -17,10 +18,40 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+            <h1>Foto's</h1>
         </header>
         <main>
             <section>
-                <h1>Foto's</h1>
+                <div class="slider-container">
+                    <div class="slider">
+                        <img src="images/bacardi.png" alt="Drank 1" width="150" height="290">
+                        <img src="images/grey_goose.png" alt="Drank 2" width="150" height="290">
+                        <img src="images/bacardi.png" alt="Drank 3" width="500" height="300">
+                        <img src="images/bacardi.png" alt="Drank 4" width="150" height="290">
+                        <img src="images/grey_goose.png" alt="Drank 5" width="150" height="290">
+                        <img src="images/bacardi.png" alt="Drank 6" width="150" height="290">
+                        <img src="images/grey_goose.png" alt="Drank 7" width="150" height="290">
+                        <img src="images/grey_goose.png" alt="Drank 8" width="150" height="290">
+                        <img src="images/grey_goose.png" alt="Drank 9" width="150" height="290">
+                        <img src="images/grey_goose.png" alt="Drank 10" width="150" height="290">
+                        <img src="images/grey_goose.png" alt="Drank 11" width="150" height="290">
+                        <img src="images/grey_goose.png" alt="Drank 12" width="150" height="290">
+                        <img src="images/grey_goose.png" alt="Drank 13" width="150" height="290">
+                    </div>
+                </div>
+                <script>
+                    const slider = document.querySelector(".slider");
+                    let scrollAmount = 0;
+            
+                    document.addEventListener("mousemove", (e) => {
+                        let screenWidth = window.innerWidth;
+                        let mouseX = e.clientX;
+                        let scrollMax = slider.scrollWidth - slider.clientWidth;
+                        let percentage = mouseX / screenWidth;
+                        scrollAmount = percentage * scrollMax;
+                        slider.style.transform = `translateX(-${scrollAmount}px)`;
+                    });
+                </script>
             </section>
         </main>
         <footer>

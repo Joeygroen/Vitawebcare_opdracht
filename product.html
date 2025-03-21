@@ -3,49 +3,171 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Product</title>
-        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="product.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </head>
-    <body>
-        <header> 
-            <a href="index.html"><img src="images/logo.png" alt="logo" width="80" height="110"></a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="product.html">Producten</a></li>
-                    <li><a href="foto.html">Foto's</a></li>
-                    <li><a href="about.html">Over</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <h1>Producten</h1>
+    <body style="background-color:bisque">
+        <header style="height:150px"> 
+            <nav class="navbar navbar-expand-xs" style="background-color:darkkhaki">
+                <a href="index.html"><img src="images/logo.png" class="m-1 rounded" width="60" height="90"></a>
+                <h1>Producten</h1>
+                <div class="dropstart">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"><img src="images/burger-menu.svg" width="40" height="40"></a>
+                    <ul class="dropdown-menu text-center" style="background-color:darkkhaki;">
+                        <li><a class="dropdown-item rounded" href="index.html">Home</a></li>
+                        <li><a class="dropdown-item rounded" href="product.html">Producten</a></li>
+                        <li><a class="dropdown-item rounded" href="foto.html">Foto's</a></li>
+                        <li><a class="dropdown-item rounded" href="about.html">About</a></li>
+                        <li><a class="dropdown-item rounded" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+             </nav>
         </header>
         <main>
-            <section class="producten">
-                <h2>Bacardi</h2>
-                <h2>Grey Goose</h2>
-                <h2>Shaker</h2>
-                <h2>Strainer</h2>
-                <h2>Jagermeister</h2>
-                <h2>Bacardi Oro</h2>
-                <h2>Prosecco</h2>
-                <h2>Tequila</h2>
-                <img src="images/bacardi.png" alt="Drank 1" width="160" height="280">
-                <img src="images/grey_goose.png" alt="Drank 2" width="160" height="280">
-                <img src="images/pngegg (39).png" alt="Drank 3" width="210" height="280">
-                <img src="images/pngegg (40).png" alt="Drank 4" width="210" height="210">
-                <img src="images/pngegg (41).png" alt="Drank 5" width="170" height="280">
-                <img src="images/pngegg (42).png" alt="Drank 6" width="210" height="280">
-                <img src="images/pngegg (43).png" alt="Drank 7" width="200" height="280">
-                <img src="images/tequila.png" alt="Drank 8" width="210" height="280">
-                <h5>€19,99</h5>
-                <h5>€29,99</h5>
-                <h5>€8,50</h5>
-                <h5>€4,99</h5>
-                <h5>€12,99</h5>
-                <h5 style="margin-left:105px;">€19,99</h5>
-                <h5 style="margin-left:105px;">€21,00</h5>
-                <h5 style="margin-left:105px;">€21,50</h5>
-            </section>
+            <div class="container row row-cols-1 row-cols-md-4 g-3 mt-5" style="margin-left: 320px;">
+                <div class="col">
+                    <div class="card" style="width: 250px;">
+                        <img class="card-img mx-auto" src="images/pngegg (44).png" style="width:180px; height:320px;"/>
+                            <div class="card-title text-center">
+                                <h3>Bacardí</h3>
+                            </div>
+                            <div class="card-subtitle text-center mb-3">
+                                <img src="images/star.svg" width="16px"/>
+                                <img src="images/star.svg" width="16px"/>
+                                <img src="images/star.svg" width="16px"/>
+                                <img src="images/star.svg" width="16px"/>
+                                <img src="images/star.svg" width="16px"/>
+                            </div>
+                            <div class="card-text text-center rounded p-3" id="price">
+                                €19,99
+                            </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 250px;">
+                        <img class="card-img mx-auto" src="images/grey_goose.png" style="width:180px; height:320px;" />
+                            <div class="card-title text-center">
+                                <h3>Grey Goose</h3>
+                            </div>
+                            <div class="card-subtitle text-center mb-3">
+                                <img src="images/star.svg" width="16px"/>
+                                <img src="images/star.svg" width="16px"/>
+                                <img src="images/star.svg" width="16px"/>
+                                <img src="images/star.svg" width="16px"/>
+                                <img src="images/star.svg" width="16px"/>
+                            </div>
+                            <div class="card-text text-center rounded p-3" id="price">
+                                €21,95
+                            </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 250px;">
+                        <img class="card-img mx-auto" src="images/pngegg (42).png" style="width:240px; height:320px;"/>
+                            <div class="card-title text-center">
+                                <h3>Bacardí Oro</h3>
+                            </div>
+                            <div class="card-subtitle text-center mb-3">
+                                <img src="images/star.svg" width="16px"/>
+                                <img src="images/star.svg" width="16px"/>
+                                <img src="images/star.svg" width="16px"/>
+                                <img src="images/star.svg" width="16px"/>
+                                <img src="images/star.svg" width="16px"/>
+                            </div>
+                            <div class="card-text text-center rounded p-3" id="price">
+                                €19,99
+                            </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 250px;">
+                        <img class="card-img mx-auto" src="images/tequila.png" style="width:240px; height:320px;"/>
+                            <div class="card-title text-center">
+                                <h3>Tequila</h3>
+                            </div>
+                            <div class="card-subtitle text-center mb-3">
+                                <img src="images/star.svg" width="16px"/>
+                                <img src="images/star.svg" width="16px"/>
+                                <img src="images/star.svg" width="16px"/>
+                                <img src="images/star.svg" width="16px"/>
+                            </div>
+                            <div class="card-text text-center rounded p-3" id="price">
+                                €18,99
+                            </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 250px;">
+                        <img class="card-img mx-auto" src="images/pngegg (43).png" style="width:240px; height:320px;"/>
+                            <div class="card-title text-center">
+                                <h3>Prosecco</h3>
+                            </div>
+                            <div class="card-subtitle text-center mb-3">
+                                <img src="images/star.svg" width="16px"/>
+                                <img src="images/star.svg" width="16px"/>
+                                <img src="images/star.svg" width="16px"/>
+                                <img src="images/star.svg" width="16px"/>
+                            </div>
+                            <div class="card-text text-center rounded p-3" id="price">
+                                €21,00
+                            </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 250px;">
+                        <img class="card-img mx-auto" src="images/pngegg (41).png" style="width:210px; height:320px;"/>
+                            <div class="card-title text-center">
+                                <h3>Jagermeister</h3>
+                            </div>
+                            <div class="card-subtitle text-center mb-3">
+                                <img src="images/star.svg" width="16px"/>
+                                <img src="images/star.svg" width="16px"/>
+                                <img src="images/star.svg" width="16px"/>
+                                <img src="images/star.svg" width="16px"/>
+                                <img src="images/star.svg" width="16px"/>
+                            </div>
+                            <div class="card-text text-center rounded p-3" id="price">
+                                €17,99
+                            </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 250px;">
+                        <img class="card-img mx-auto" src="images/pngegg (39).png" style="width:210px; height:320px;"/>
+                            <div class="card-title text-center">
+                                <h3>Shaker</h3>
+                            </div>
+                            <div class="card-subtitle text-center mb-3">
+                                <img src="images/star.svg" width="16px"/>
+                                <img src="images/star.svg" width="16px"/>
+                                <img src="images/star.svg" width="16px"/>
+                                <img src="images/star.svg" width="16px"/>
+                                <img src="images/star.svg" width="16px"/>
+                            </div>
+                            <div class="card-text text-center rounded p-3" id="price">
+                                €12,99
+                            </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 250px;">
+                        <img class="card-img mx-auto" src="images/pngegg (40).png" style="width:250px; height:320px;"/>
+                            <div class="card-title text-center">
+                                <h3>Strainer</h3>
+                            </div>
+                            <div class="card-subtitle text-center mb-3">
+                                <img src="images/star.svg" width="16px"/>
+                                <img src="images/star.svg" width="16px"/>
+                                <img src="images/star.svg" width="16px"/>
+                                <img src="images/star.svg" width="16px"/>
+                            </div>
+                            <div class="card-text text-center rounded p-3" id="price">
+                                €6,99
+                            </div>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer class="product-footer">
             <p>Created by Joey Groenestein</p>

@@ -1,0 +1,36 @@
+.link {
+    margin-top: 100px;
+    margin-left: 250px;
+}
+
+.range-labels {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    font-size: 13px;
+}
+
+#form-container {
+    border: 2px solid;
+    border-color:#CBBD93;
+    padding: 10px;
+}
+
+#button {
+    background-color: #CBBD93;
+}
+
+
+#button:hover{
+    box-shadow: 5px 5px;
+    background-color: lightgreen;
+}
+
+footer {
+    display: flex;
+    background-color: #CBBD93;
+    padding: 18px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,17 +1,17 @@
-nav {
-    display: flex;
-    align-items: center;
+#price{
+    background-color: greenyellow;
 }
 
-a {
-    text-decoration: none;
+#price:hover{
+    background-color: lightgreen;
+    font-weight: bold;
 }
 
 footer {
     display: flex;
     background-color: #CBBD93;
     padding: 18px;
-    margin-top: 31px;
+    margin-top: 73px;
     justify-content: center;
     align-items: center;
 }

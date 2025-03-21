@@ -1,17 +1,8 @@
-nav {
-    display: flex;
-    align-items: center;
-}
-
-a {
-    text-decoration: none;
-}
-
 footer {
     display: flex;
     background-color: #CBBD93;
     padding: 18px;
-    margin-top: 31px;
+    margin-top: 73px;
     justify-content: center;
     align-items: center;
 }
